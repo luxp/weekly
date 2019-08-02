@@ -26,6 +26,11 @@ function getWeeklyDate(weekNo) {
   }
 }
 
+function initWeeklyContent(weekNo) {
+  let weeklyTitleNo = prefixInt(weekNo, 4)
+  return `# 每周分享第 ${weeklyTitleNo} 期\n\n## React in depth\n\n## 分享\n`
+}
+
 function initWeekly() {
   let { year, month, day } = getWeeklyDate(weekNo)
   if (!fileExistsSync(year)) {
@@ -35,10 +40,9 @@ function initWeekly() {
     fs.mkdirSync(path.resolve(__dirname, `${year}/${month}`))
   }
   if (!fileExistsSync(`${year}/${month}/${day}.md`)) {
-    let weeklyTitleNo = prefixInt(weekNo, 4)
     fs.writeFileSync(
       path.resolve(__dirname, `${year}/${month}/${day}.md`),
-      `# 每周分享第 ${weeklyTitleNo} 期\n`
+      initWeeklyContent(weekNo)
     )
   }
 }
