@@ -80,7 +80,10 @@ function updateReadme() {
     readmeStr += `\n## ${year}\n\n`
     Object.keys(weeklySummaryMap[year]).forEach(month => {
       readmeStr += `- ${zhNumber[+month]}月: `
-      weeklySummaryMap[year][month].forEach(weeklyItem => {
+      weeklySummaryMap[year][month].forEach((weeklyItem, index) => {
+        if (index > 0) {
+          readmeStr += ` | `
+        }
         readmeStr += `[第 ${prefixInt(weeklyItem.weeklyNo, 4)} 期](${
           weeklyItem.year
         }/${weeklyItem.month}/${weeklyItem.day})`
