@@ -86,7 +86,7 @@ function updateReadme() {
         }
         readmeStr += `[第 ${prefixInt(weeklyItem.weeklyNo, 4)} 期](${
           weeklyItem.year
-        }/${weeklyItem.month}/${weeklyItem.day})`
+        }/${weeklyItem.month}/${weeklyItem.day}.md)`
       })
       readmeStr += '\n'
     })
