@@ -28,7 +28,7 @@ function getWeeklyDate(weekNo) {
 
 function initWeeklyContent(weekNo) {
   let weeklyTitleNo = prefixInt(weekNo, 4)
-  return `# 每周分享第 ${weeklyTitleNo} 期\n\n## React in depth\n\n## 分享\n`
+  return `# 每周分享第 ${weeklyTitleNo} 期\n\n## 分享\n`
 }
 
 function initWeekly() {
