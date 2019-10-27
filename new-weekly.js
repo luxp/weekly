@@ -67,9 +67,9 @@ function updateReadme() {
   let weeklySummaryMap = {}
   for (let i = 1; i <= weekNo; ++i) {
     let { year, month, day } = getWeeklyDate(i)
-    weeklySummaryMap[year] = weeklySummaryMap[year] || {}
-    weeklySummaryMap[year][month] = weeklySummaryMap[year][month] || []
-    weeklySummaryMap[year][month].push({
+    weeklySummaryMap[+year] = weeklySummaryMap[+year] || {}
+    weeklySummaryMap[+year][+month] = weeklySummaryMap[+year][+month] || []
+    weeklySummaryMap[+year][+month].push({
       weeklyNo: i,
       year,
       month,
