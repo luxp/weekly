@@ -63,7 +63,7 @@ function updateReadme() {
     '十一',
     '十二'
   ]
-  let readmeStr = `# 每周分享\n\n> 每周六发布\n`
+  let readmeStr = `# 每周分享\n\n> 每周发布\n`
   let weeklySummaryMap = {}
   for (let i = 1; i <= weekNo; ++i) {
     let { year, month, day } = getWeeklyDate(i)
