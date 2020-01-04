@@ -23,7 +23,7 @@
 
 ## 分享
 
-1. 快速导出你的 Kindle 笔记，导出之后 Kindle 会是一个 html 默认每个文字中间都加了一个空格，使用下面的脚本可以快速去除空格
+1. 处理导出的 Kindle 笔记：导出之后 Kindle 会是一个 html 默认每个文字中间都加了一个空格，使用下面的脚本可以快速去除空格
 
 ```js
 document.querySelectorAll('.noteText').forEach(item => {
@@ -31,4 +31,4 @@ document.querySelectorAll('.noteText').forEach(item => {
 })
 ```
 
-2. [SAKURA FRP](https://www.natfrp.com/)，一个可以免费试用的内网穿透服务，作者是一名高中学生，蛮有趣的一个服务哦。封装了一个 [@luxp/sakura-frp-cli](https://github.com/luxp/sakura-frp-cli) 自动下载和安装
+2. [SAKURA FRP](https://www.natfrp.com/): 一个可以免费试用的内网穿透服务，作者是一名高中学生，蛮有趣的一个服务哦。封装了一个 [@luxp/sakura-frp-cli](https://github.com/luxp/sakura-frp-cli) 自动下载和安装
