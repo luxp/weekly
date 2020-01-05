@@ -37,5 +37,5 @@ document.querySelectorAll('.noteText').forEach(item => {
 4. [SAKURA FRP](https://www.natfrp.com/): 一个可以免费试用的内网穿透服务，作者是一名高中学生，蛮有趣的一个服务哦。封装了一个 [@luxp/sakura-frp-cli](https://github.com/luxp/sakura-frp-cli) 自动下载和安装
 
 5. Alfred Workflow 开发：这周搜了一个豆瓣的 Alfred Workflow [alfred-douban](https://github.com/sorrycc/alfred-douban)发现不能用了，想着更新一波新的接口，结果发现豆瓣接口已经不能用了，失败告终。不过通过看了源代码，发现了 [alfy](https://github.com/sindresorhus/alfy#readme) 这么一个工具，基本把 Alfred Workflow 中需要用到的一些功能都做了封装，使得开发只需要关注核心业务逻辑就可以了。最后豆瓣的几个快速搜索可以通过添加下面两个 Web Search 来替代实现。
-   - 图书：https://www.douban.com/search?cat=1001&q={query}
-   - 电影：https://www.douban.com/search?cat=1002&q={query}
+   - 图书：`https://www.douban.com/search?cat=1001&q={query}`
+   - 电影：`https://www.douban.com/search?cat=1002&q={query}`
