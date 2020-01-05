@@ -10,9 +10,10 @@
 
 2020 感慨了一波，下面是分享我这周干的一些事情和一些想法。
 
-## Reading
+## 过去的这一周
 
-1. 《极简主义》：周末看的一本书，里面有一些文字还是蛮受启发的。书中的一些文字可能会偏绝对，但还是会给人一些启发。极简主义不是要丢弃到
+1. 《极简主义》：周末看的一本书，里面有一些文字还是蛮受启发的。书中的一些文字可能会偏绝对，但还是会给人一些启发。极简主义不是为了丢弃没用的东西，而是要找到生活中真正重要的哪些东西。
+
    - 整理你东西的最好方式就是扔掉其中的大部分。困扰我们的不是事物本身，而是我们对其重要性的理解。
    - 我们必须停止寻求快乐，而开始寻找意义。
    - 事业是危险的，因为人们把太多自己的东西都投入在事业上，把自己的身份和社会地位建立在他们事业的基础之上。
@@ -21,9 +22,7 @@
    - 通往自由的捷径就是感恩你已经拥有的一切。而产生感激之情的最好方法之一就是改变你的视角。
    - 明天和现在总是隔着一天。
 
-## 分享
-
-1. 处理导出的 Kindle 笔记：导出之后 Kindle 会是一个 html 默认每个文字中间都加了一个空格，使用下面的脚本可以快速去除空格
+2. 处理导出的 Kindle 笔记：导出之后 Kindle 会是一个 html 默认每个文字中间都加了一个空格，使用下面的脚本可以快速去除空格
 
 ```js
 document.querySelectorAll('.noteText').forEach(item => {
@@ -31,4 +30,8 @@ document.querySelectorAll('.noteText').forEach(item => {
 })
 ```
 
-2. [SAKURA FRP](https://www.natfrp.com/): 一个可以免费试用的内网穿透服务，作者是一名高中学生，蛮有趣的一个服务哦。封装了一个 [@luxp/sakura-frp-cli](https://github.com/luxp/sakura-frp-cli) 自动下载和安装
+3. [SAKURA FRP](https://www.natfrp.com/): 一个可以免费试用的内网穿透服务，作者是一名高中学生，蛮有趣的一个服务哦。封装了一个 [@luxp/sakura-frp-cli](https://github.com/luxp/sakura-frp-cli) 自动下载和安装
+
+4. Alfred Workflow 开发：这周搜了一个豆瓣的 Alfred Workflow [alfred-douban](https://github.com/sorrycc/alfred-douban)发现不能用了，想着更新一波新的接口，结果发现豆瓣接口已经不能用了，失败告终。不过通过看了源代码，发现了 [alfy](https://github.com/sindresorhus/alfy#readme) 这么一个工具，基本把 Alfred Workflow 中需要用到的一些功能都做了封装，使得开发只需要关注核心业务逻辑就可以了。最后豆瓣的几个快速搜索可以通过添加下面两个 Web Search 来替代实现。
+   - 图书：https://www.douban.com/search?cat=1001&q={query}
+   - 电影：https://www.douban.com/search?cat=1002&q={query}
