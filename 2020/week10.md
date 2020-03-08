@@ -4,6 +4,8 @@
 
 刷了一部剧 [《想见你》](https://www.iqiyi.com/lib/m_222534614.html)，剧情有很多的意外，也许已经过了年纪吧，剧中的情节很感动，但，现实太难了
 
+Only if you asked to see me, our meeting would be meaningful.
+
 听了几首歌
 
 - [我们](http://url.cn/5mRo55n)
